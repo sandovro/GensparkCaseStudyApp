@@ -2,12 +2,12 @@
 
 <div>
     
-     <h3>Create An Account</h3>
+     <h3>Sign Up</h3>
        <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
          <div>
-           <label for="email">Email</label>
+           <label for="email">Email</label><br>
            <input formControlName="email"  type="email"  required><br>
-           <label for="password">Password</label>
+           <label for="password">Password</label><br>
            <input formControlName="password"  type="password">
          </div>
          <button>Submit</button><br>

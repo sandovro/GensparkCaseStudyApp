@@ -1,3 +1,14 @@
+tr td{
+    display: inline-block;
+    padding: 10px;
+}
+body {
+    background-color: #088395;
+  }
+
 h1 {
     text-align: center;
 }
+
+
+

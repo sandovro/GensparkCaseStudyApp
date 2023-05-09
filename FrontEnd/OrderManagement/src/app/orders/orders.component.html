@@ -1,6 +1,19 @@
 <h1>Orders</h1>
 
+<table>
+<tr>
+    <td><h4>Order ID</h4></td>
+    <td><h4>Items</h4></td>
+    <td><h4>Cancel</h4></td>
+</tr>
 
-<div *ngFor="let order of orders">
-  <div>{{order.orderId}}</div>
-</div>
+<tr *ngFor="let order of orders">
+  <td>{{order.orderId}}</td>
+  <td>
+  <tr *ngFor="let item of order.items">
+    <td>{{item.itemName}}</td>
+  </tr>
+</td>
+
+</tr>
+</table>
